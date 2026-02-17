@@ -1,0 +1,2186 @@
+{
+  "Name": "G1000_PanExample",
+  "ConfigFiles": [
+    {
+      "Label": "G1000_PanExample",
+      "FileName": "G1000_PanExample.mcc",
+      "ReferenceOnly": false,
+      "EmbedContent": true,
+      "ConfigItems": [
+        {
+          "encoder": {
+            "onLeft": {
+              "Type": "MSFS2020CustomInputAction",
+              "Command": "(>H:AS1000_MFD_FMS_Lower_DEC)",
+              "PresetId": "c9198ce0-3aa6-4a54-a646-d9489ebd2878"
+            },
+            "onLeftFast": null,
+            "onRight": {
+              "Type": "MSFS2020CustomInputAction",
+              "Command": "(>H:AS1000_MFD_FMS_Lower_INC)",
+              "PresetId": "a144a51b-d9ed-4421-8eb5-e8048e61f827"
+            },
+            "onRightFast": null
+          },
+          "DeviceType": "Encoder",
+          "DeviceName": "EncFMS_OuterRing",
+          "GUID": "336f687b-c92b-4614-a526-dd9615d29c52",
+          "Active": true,
+          "Name": "AS1000_MFD_BigKnob",
+          "Type": "InputConfigItem",
+          "ModuleSerial": "G1000/ SN-63C-8CC",
+          "Preconditions": [],
+          "Modifiers": {
+            "Items": []
+          },
+          "ConfigRefs": [],
+          "RawValue": "",
+          "Value": "",
+          "Status": {}
+        },
+        {
+          "encoder": {
+            "onLeft": {
+              "Type": "MSFS2020CustomInputAction",
+              "Command": "(>H:AS1000_MFD_RANGE_INC)",
+              "PresetId": "fdcb4bc4-96ee-4fa8-8514-ae2d00c14336"
+            },
+            "onLeftFast": null,
+            "onRight": {
+              "Type": "MSFS2020CustomInputAction",
+              "Command": "(>H:AS1000_MFD_RANGE_DEC)",
+              "PresetId": "a3c8d8e0-e6a5-4c19-9b3e-31178dfa2ebb"
+            },
+            "onRightFast": null
+          },
+          "DeviceType": "Encoder",
+          "DeviceName": "JSMap_Range",
+          "GUID": "030ed056-7025-49a8-9bd2-b6cf5a05186c",
+          "Active": true,
+          "Name": "AS1000_MFD_Map_Range",
+          "Type": "InputConfigItem",
+          "ModuleSerial": "G1000/ SN-63C-8CC",
+          "Preconditions": [
+            {
+              "PreconditionType": "none",
+              "PreconditionRef": null,
+              "PreconditionSerial": null,
+              "PreconditionPin": null,
+              "PreconditionOperand": "=",
+              "PreconditionValue": null,
+              "PreconditionLogic": "and",
+              "PreconditionActive": true
+            }
+          ],
+          "Modifiers": {
+            "Items": []
+          },
+          "ConfigRefs": [],
+          "RawValue": "",
+          "Value": "",
+          "Status": {}
+        },
+        {
+          "button": {
+            "onPress": null,
+            "onRelease": null,
+            "onLongRelease": null,
+            "onHold": {
+              "Type": "MSFS2020CustomInputAction",
+              "Command": "(>H:AS1000_MFD_JOYSTICK_UP)",
+              "PresetId": "4e3a63d2-2ad5-4b1d-a3a3-48d040fbdc6c"
+            },
+            "LongReleaseDelay": 350,
+            "HoldDelay": 100,
+            "RepeatDelay": 100
+          },
+          "DeviceType": "Button",
+          "DeviceName": "JSMap_PanUp",
+          "GUID": "deed702a-4881-4718-899b-1a4bbf7e3317",
+          "Active": true,
+          "Name": "AS1000_MFD_Map_Up",
+          "Type": "InputConfigItem",
+          "ModuleSerial": "-",
+          "Preconditions": [
+            {
+              "PreconditionType": "none",
+              "PreconditionRef": null,
+              "PreconditionSerial": null,
+              "PreconditionPin": null,
+              "PreconditionOperand": "=",
+              "PreconditionValue": null,
+              "PreconditionLogic": "and",
+              "PreconditionActive": true
+            }
+          ],
+          "Modifiers": {
+            "Items": []
+          },
+          "ConfigRefs": [],
+          "RawValue": "",
+          "Value": "",
+          "Status": {}
+        },
+        {
+          "button": {
+            "onPress": null,
+            "onRelease": null,
+            "onLongRelease": null,
+            "onHold": {
+              "Type": "MSFS2020CustomInputAction",
+              "Command": "(>H:AS1000_MFD_JOYSTICK_LEFT)",
+              "PresetId": "b7e4f454-30d8-45e3-ae21-aa745f9c0aa8"
+            },
+            "LongReleaseDelay": 350,
+            "HoldDelay": 100,
+            "RepeatDelay": 100
+          },
+          "DeviceType": "Button",
+          "DeviceName": "JSMap_PanL",
+          "GUID": "6be5fe2c-4e19-41d9-b60f-9dabe0cedeba",
+          "Active": true,
+          "Name": "AS1000_MFD_Map_Left",
+          "Type": "InputConfigItem",
+          "ModuleSerial": "G1000/ SN-63C-8CC",
+          "Preconditions": [
+            {
+              "PreconditionType": "none",
+              "PreconditionRef": null,
+              "PreconditionSerial": null,
+              "PreconditionPin": null,
+              "PreconditionOperand": "=",
+              "PreconditionValue": null,
+              "PreconditionLogic": "and",
+              "PreconditionActive": true
+            }
+          ],
+          "Modifiers": {
+            "Items": []
+          },
+          "ConfigRefs": [],
+          "RawValue": "",
+          "Value": "",
+          "Status": {}
+        },
+        {
+          "button": {
+            "onPress": null,
+            "onRelease": null,
+            "onLongRelease": null,
+            "onHold": {
+              "Type": "MSFS2020CustomInputAction",
+              "Command": "(>H:AS1000_MFD_JOYSTICK_RIGHT)",
+              "PresetId": "ef21f306-2f23-486f-807b-17a7cfdbff4a"
+            },
+            "LongReleaseDelay": 350,
+            "HoldDelay": 100,
+            "RepeatDelay": 100
+          },
+          "DeviceType": "Button",
+          "DeviceName": "JSMap_PanR",
+          "GUID": "ed6b7ffe-677a-4e92-835a-8026fae7bb30",
+          "Active": true,
+          "Name": "AS1000_MFD_Map_Right",
+          "Type": "InputConfigItem",
+          "ModuleSerial": "G1000/ SN-63C-8CC",
+          "Preconditions": [
+            {
+              "PreconditionType": "none",
+              "PreconditionRef": null,
+              "PreconditionSerial": null,
+              "PreconditionPin": null,
+              "PreconditionOperand": "=",
+              "PreconditionValue": null,
+              "PreconditionLogic": "and",
+              "PreconditionActive": true
+            }
+          ],
+          "Modifiers": {
+            "Items": []
+          },
+          "ConfigRefs": [],
+          "RawValue": "",
+          "Value": "",
+          "Status": {}
+        },
+        {
+          "button": {
+            "onPress": null,
+            "onRelease": null,
+            "onLongRelease": null,
+            "onHold": {
+              "Type": "MSFS2020CustomInputAction",
+              "Command": "(>H:AS1000_MFD_JOYSTICK_DOWN)",
+              "PresetId": "3e4610c5-17b8-4336-b248-d32d2be92179"
+            },
+            "LongReleaseDelay": 350,
+            "HoldDelay": 100,
+            "RepeatDelay": 100
+          },
+          "DeviceType": "Button",
+          "DeviceName": "JSMap_PanDn",
+          "GUID": "6d86d853-f5d8-4c11-ac21-d58e51bc22df",
+          "Active": true,
+          "Name": "AS1000_MFD_Map_Down",
+          "Type": "InputConfigItem",
+          "ModuleSerial": "G1000/ SN-63C-8CC",
+          "Preconditions": [
+            {
+              "PreconditionType": "none",
+              "PreconditionRef": null,
+              "PreconditionSerial": null,
+              "PreconditionPin": null,
+              "PreconditionOperand": "=",
+              "PreconditionValue": null,
+              "PreconditionLogic": "and",
+              "PreconditionActive": true
+            }
+          ],
+          "Modifiers": {
+            "Items": []
+          },
+          "ConfigRefs": [],
+          "RawValue": "",
+          "Value": "",
+          "Status": {}
+        },
+        {
+          "button": {
+            "onPress": {
+              "Type": "VariableInputAction",
+              "Variable": {
+                "TYPE": "number",
+                "Name": "PreventPush",
+                "Number": 1.0,
+                "Text": "1",
+                "Expression": "1"
+              }
+            },
+            "onRelease": {
+              "Type": "VariableInputAction",
+              "Variable": {
+                "TYPE": "number",
+                "Name": "PreventPush",
+                "Number": 0.0,
+                "Text": "0",
+                "Expression": "0"
+              }
+            },
+            "onLongRelease": null,
+            "onHold": null,
+            "LongReleaseDelay": 350,
+            "HoldDelay": 350,
+            "RepeatDelay": 0
+          },
+          "DeviceType": "Button",
+          "DeviceName": "JSMap_PanDn",
+          "GUID": "601a88e1-adcd-402a-a8c6-9f77bfcfdcde",
+          "Active": true,
+          "Name": "AS1000_MFD_Map_Dn_PreventPush",
+          "Type": "InputConfigItem",
+          "ModuleSerial": "-",
+          "Preconditions": [
+            {
+              "PreconditionType": "none",
+              "PreconditionRef": null,
+              "PreconditionSerial": null,
+              "PreconditionPin": null,
+              "PreconditionOperand": "=",
+              "PreconditionValue": null,
+              "PreconditionLogic": "and",
+              "PreconditionActive": true
+            }
+          ],
+          "Modifiers": {
+            "Items": []
+          },
+          "ConfigRefs": [],
+          "RawValue": "",
+          "Value": "",
+          "Status": {}
+        },
+        {
+          "button": {
+            "onPress": {
+              "Type": "VariableInputAction",
+              "Variable": {
+                "TYPE": "number",
+                "Name": "PreventPush",
+                "Number": 1.0,
+                "Text": "1",
+                "Expression": "1"
+              }
+            },
+            "onRelease": {
+              "Type": "VariableInputAction",
+              "Variable": {
+                "TYPE": "number",
+                "Name": "PreventPush",
+                "Number": 0.0,
+                "Text": "0",
+                "Expression": "0"
+              }
+            },
+            "onLongRelease": null,
+            "onHold": null,
+            "LongReleaseDelay": 350,
+            "HoldDelay": 350,
+            "RepeatDelay": 0
+          },
+          "DeviceType": "Button",
+          "DeviceName": "JSMap_PanR",
+          "GUID": "910df6cf-a5af-4777-a3e7-641d923ac86e",
+          "Active": true,
+          "Name": "AS1000_MFD_Map_R_PreventPush",
+          "Type": "InputConfigItem",
+          "ModuleSerial": "G1000/ SN-63C-8CC",
+          "Preconditions": [
+            {
+              "PreconditionType": "none",
+              "PreconditionRef": null,
+              "PreconditionSerial": null,
+              "PreconditionPin": null,
+              "PreconditionOperand": "=",
+              "PreconditionValue": null,
+              "PreconditionLogic": "and",
+              "PreconditionActive": true
+            }
+          ],
+          "Modifiers": {
+            "Items": []
+          },
+          "ConfigRefs": [],
+          "RawValue": "",
+          "Value": "",
+          "Status": {}
+        },
+        {
+          "button": {
+            "onPress": {
+              "Type": "VariableInputAction",
+              "Variable": {
+                "TYPE": "number",
+                "Name": "PreventPush",
+                "Number": 1.0,
+                "Text": "1",
+                "Expression": "1"
+              }
+            },
+            "onRelease": {
+              "Type": "VariableInputAction",
+              "Variable": {
+                "TYPE": "number",
+                "Name": "PreventPush",
+                "Number": 0.0,
+                "Text": "0",
+                "Expression": "0"
+              }
+            },
+            "onLongRelease": null,
+            "onHold": null,
+            "LongReleaseDelay": 350,
+            "HoldDelay": 350,
+            "RepeatDelay": 0
+          },
+          "DeviceType": "Button",
+          "DeviceName": "JSMap_PanL",
+          "GUID": "edec2bc9-7802-4a2d-8876-ce7048b0ef36",
+          "Active": true,
+          "Name": "AS1000_MFD_Map_L_PreventPush",
+          "Type": "InputConfigItem",
+          "ModuleSerial": "G1000/ SN-63C-8CC",
+          "Preconditions": [
+            {
+              "PreconditionType": "none",
+              "PreconditionRef": null,
+              "PreconditionSerial": null,
+              "PreconditionPin": null,
+              "PreconditionOperand": "=",
+              "PreconditionValue": null,
+              "PreconditionLogic": "and",
+              "PreconditionActive": true
+            }
+          ],
+          "Modifiers": {
+            "Items": []
+          },
+          "ConfigRefs": [],
+          "RawValue": "",
+          "Value": "",
+          "Status": {}
+        },
+        {
+          "button": {
+            "onPress": {
+              "Type": "VariableInputAction",
+              "Variable": {
+                "TYPE": "number",
+                "Name": "PreventPush",
+                "Number": 1.0,
+                "Text": "1",
+                "Expression": "1"
+              }
+            },
+            "onRelease": {
+              "Type": "VariableInputAction",
+              "Variable": {
+                "TYPE": "number",
+                "Name": "PreventPush",
+                "Number": 0.0,
+                "Text": "0",
+                "Expression": "0"
+              }
+            },
+            "onLongRelease": null,
+            "onHold": null,
+            "LongReleaseDelay": 350,
+            "HoldDelay": 350,
+            "RepeatDelay": 0
+          },
+          "DeviceType": "Button",
+          "DeviceName": "JSMap_PanUp",
+          "GUID": "6328b5c9-8e18-4246-a698-8c692950cc70",
+          "Active": true,
+          "Name": "AS1000_MFD_Map_Up_PreventPush",
+          "Type": "InputConfigItem",
+          "ModuleSerial": "G1000/ SN-63C-8CC",
+          "Preconditions": [
+            {
+              "PreconditionType": "none",
+              "PreconditionRef": null,
+              "PreconditionSerial": null,
+              "PreconditionPin": null,
+              "PreconditionOperand": "=",
+              "PreconditionValue": null,
+              "PreconditionLogic": "and",
+              "PreconditionActive": true
+            }
+          ],
+          "Modifiers": {
+            "Items": []
+          },
+          "ConfigRefs": [],
+          "RawValue": "",
+          "Value": "",
+          "Status": {}
+        },
+        {
+          "button": {
+            "onPress": {
+              "Type": "MSFS2020CustomInputAction",
+              "Command": "(>H:AS1000_MFD_JOYSTICK_PUSH)",
+              "PresetId": "3768bd5c-ee69-4ca7-a3f0-582c48c895d8"
+            },
+            "onRelease": null,
+            "onLongRelease": null,
+            "onHold": null,
+            "LongReleaseDelay": 350,
+            "HoldDelay": 350,
+            "RepeatDelay": 0
+          },
+          "DeviceType": "Button",
+          "DeviceName": "JSMap_Push",
+          "GUID": "e0625347-65fc-4773-b366-528e87a80706",
+          "Active": true,
+          "Name": "AS1000_MFD_Map_Push",
+          "Type": "InputConfigItem",
+          "ModuleSerial": "-",
+          "Preconditions": [
+            {
+              "PreconditionType": "variable",
+              "PreconditionRef": "PreventPush",
+              "PreconditionSerial": null,
+              "PreconditionPin": null,
+              "PreconditionOperand": "=",
+              "PreconditionValue": "0",
+              "PreconditionLogic": "and",
+              "PreconditionActive": true
+            }
+          ],
+          "Modifiers": {
+            "Items": []
+          },
+          "ConfigRefs": [],
+          "RawValue": "",
+          "Value": "",
+          "Status": {}
+        },
+        {
+          "encoder": {
+            "onLeft": {
+              "Type": "MSFS2020CustomInputAction",
+              "Command": "(>H:AS1000_MFD_FMS_Upper_DEC)",
+              "PresetId": "0e1e89fe-18a6-4010-9f89-ddf36e4de3d7"
+            },
+            "onLeftFast": null,
+            "onRight": {
+              "Type": "MSFS2020CustomInputAction",
+              "Command": "(>H:AS1000_MFD_FMS_Upper_INC)",
+              "PresetId": "d02f496e-3b5a-427a-8300-cd21c97ffe6c"
+            },
+            "onRightFast": null
+          },
+          "DeviceType": "Encoder",
+          "DeviceName": "EncFMS_InnerRing",
+          "GUID": "63dd6993-ea0d-486e-b347-36c83f57cd16",
+          "Active": true,
+          "Name": "AS1000_MFD_LittleKnob",
+          "Type": "InputConfigItem",
+          "ModuleSerial": "G1000/ SN-63C-8CC",
+          "Preconditions": [],
+          "Modifiers": {
+            "Items": []
+          },
+          "ConfigRefs": [],
+          "RawValue": "",
+          "Value": "",
+          "Status": {}
+        },
+        {
+          "button": {
+            "onPress": {
+              "Type": "MSFS2020CustomInputAction",
+              "Command": "(>K:RUDDER_TRIM_RIGHT)",
+              "PresetId": "28585ee0-ea69-42ee-9b19-bb99c39f6561"
+            },
+            "onRelease": null,
+            "onLongRelease": null,
+            "onHold": {
+              "Type": "MSFS2020CustomInputAction",
+              "Command": "(>K:RUDDER_TRIM_RIGHT)",
+              "PresetId": "28585ee0-ea69-42ee-9b19-bb99c39f6561"
+            },
+            "LongReleaseDelay": 350,
+            "HoldDelay": 200,
+            "RepeatDelay": 150
+          },
+          "DeviceType": "Button",
+          "DeviceName": "Rudder_Trim_Rght",
+          "GUID": "c92e8e46-7d6a-4915-96b1-fb18b84bdf6c",
+          "Active": true,
+          "Name": "Rudder_Trim_Right",
+          "Type": "InputConfigItem",
+          "ModuleSerial": "BOB Board/ SN-378-827",
+          "Preconditions": [
+            {
+              "PreconditionType": "none",
+              "PreconditionRef": null,
+              "PreconditionSerial": null,
+              "PreconditionPin": null,
+              "PreconditionOperand": "=",
+              "PreconditionValue": null,
+              "PreconditionLogic": "and",
+              "PreconditionActive": true
+            }
+          ],
+          "Modifiers": {
+            "Items": []
+          },
+          "ConfigRefs": [],
+          "RawValue": "",
+          "Value": "",
+          "Status": {}
+        },
+        {
+          "button": {
+            "onPress": {
+              "Type": "MSFS2020CustomInputAction",
+              "Command": "(>K:FLAPS_UP)",
+              "PresetId": "1699149f-e8ee-462c-b4d5-7f502826501a"
+            },
+            "onRelease": null,
+            "onLongRelease": null,
+            "onHold": null,
+            "LongReleaseDelay": 350,
+            "HoldDelay": 350,
+            "RepeatDelay": 0
+          },
+          "DeviceType": "Button",
+          "DeviceName": "Flaps_0",
+          "GUID": "9c7d4f92-53a1-40e0-acec-0875b5f75e02",
+          "Active": true,
+          "Name": "Flaps_0",
+          "Type": "InputConfigItem",
+          "ModuleSerial": "BOB Board/ SN-378-827",
+          "Preconditions": [],
+          "Modifiers": {
+            "Items": []
+          },
+          "ConfigRefs": [],
+          "RawValue": "",
+          "Value": "",
+          "Status": {}
+        },
+        {
+          "button": {
+            "onPress": {
+              "Type": "MSFS2020CustomInputAction",
+              "Command": "(>K:FLAPS_1)",
+              "PresetId": "71e2bbf8-4d88-43fc-a7bb-138ca2028e86"
+            },
+            "onRelease": null,
+            "onLongRelease": null,
+            "onHold": null,
+            "LongReleaseDelay": 350,
+            "HoldDelay": 350,
+            "RepeatDelay": 0
+          },
+          "DeviceType": "Button",
+          "DeviceName": "Flaps_1",
+          "GUID": "5b2d6687-ca90-4b43-9a19-bfab390ee547",
+          "Active": true,
+          "Name": "Flaps_1",
+          "Type": "InputConfigItem",
+          "ModuleSerial": "BOB Board/ SN-378-827",
+          "Preconditions": [],
+          "Modifiers": {
+            "Items": []
+          },
+          "ConfigRefs": [],
+          "RawValue": "",
+          "Value": "",
+          "Status": {}
+        },
+        {
+          "button": {
+            "onPress": {
+              "Type": "MSFS2020CustomInputAction",
+              "Command": "(>K:FLAPS_2)",
+              "PresetId": "e936566b-7eb2-4583-8a6c-c67020a332a1"
+            },
+            "onRelease": null,
+            "onLongRelease": null,
+            "onHold": null,
+            "LongReleaseDelay": 350,
+            "HoldDelay": 350,
+            "RepeatDelay": 0
+          },
+          "DeviceType": "Button",
+          "DeviceName": "Flaps_2",
+          "GUID": "9dd12b1c-c38c-407c-a8bf-f76a4df382c1",
+          "Active": true,
+          "Name": "Flaps_2",
+          "Type": "InputConfigItem",
+          "ModuleSerial": "BOB Board/ SN-378-827",
+          "Preconditions": [],
+          "Modifiers": {
+            "Items": []
+          },
+          "ConfigRefs": [],
+          "RawValue": "",
+          "Value": "",
+          "Status": {}
+        },
+        {
+          "button": {
+            "onPress": {
+              "Type": "MSFS2020CustomInputAction",
+              "Command": "(>K:FLAPS_3)",
+              "PresetId": "f8b04d8b-b8ca-4d3f-8426-5a7cb004b431"
+            },
+            "onRelease": null,
+            "onLongRelease": null,
+            "onHold": null,
+            "LongReleaseDelay": 350,
+            "HoldDelay": 350,
+            "RepeatDelay": 0
+          },
+          "DeviceType": "Button",
+          "DeviceName": "Flaps_3",
+          "GUID": "d4338a78-3005-4e9e-95a8-6aa2f2bd4243",
+          "Active": true,
+          "Name": "Flaps_3",
+          "Type": "InputConfigItem",
+          "ModuleSerial": "BOB Board/ SN-378-827",
+          "Preconditions": [],
+          "Modifiers": {
+            "Items": []
+          },
+          "ConfigRefs": [],
+          "RawValue": "",
+          "Value": "",
+          "Status": {}
+        },
+        {
+          "button": {
+            "onPress": {
+              "Type": "MSFS2020CustomInputAction",
+              "Command": "0 (>L:FSR_M500_PRESSURIZATION_ECS_KNOB)\n",
+              "PresetId": "0"
+            },
+            "onRelease": null,
+            "onLongRelease": null,
+            "onHold": null,
+            "LongReleaseDelay": 350,
+            "HoldDelay": 350,
+            "RepeatDelay": 0
+          },
+          "DeviceType": "Button",
+          "DeviceName": "Cabin_Press_Off",
+          "GUID": "f003d0e3-e536-4084-9f92-dc9802af9a06",
+          "Active": true,
+          "Name": "Cabin_Pressure_Off",
+          "Type": "InputConfigItem",
+          "ModuleSerial": "BOB Board/ SN-378-827",
+          "Preconditions": [],
+          "Modifiers": {
+            "Items": []
+          },
+          "ConfigRefs": [],
+          "RawValue": "",
+          "Value": "",
+          "Status": {}
+        },
+        {
+          "button": {
+            "onPress": {
+              "Type": "MSFS2020CustomInputAction",
+              "Command": "1 (>L:FSR_M500_PRESSURIZATION_ECS_KNOB)\n",
+              "PresetId": "0"
+            },
+            "onRelease": null,
+            "onLongRelease": null,
+            "onHold": null,
+            "LongReleaseDelay": 350,
+            "HoldDelay": 350,
+            "RepeatDelay": 0
+          },
+          "DeviceType": "Button",
+          "DeviceName": "Cabin_Press_Norm",
+          "GUID": "e2b87ac5-375c-44e3-8dce-14eb89b51ca6",
+          "Active": true,
+          "Name": "Cabin_Pressure_Norm",
+          "Type": "InputConfigItem",
+          "ModuleSerial": "BOB Board/ SN-378-827",
+          "Preconditions": [],
+          "Modifiers": {
+            "Items": []
+          },
+          "ConfigRefs": [],
+          "RawValue": "",
+          "Value": "",
+          "Status": {}
+        },
+        {
+          "button": {
+            "onPress": {
+              "Type": "MSFS2020CustomInputAction",
+              "Command": "2 (>L:FSR_M500_PRESSURIZATION_ECS_KNOB)\n",
+              "PresetId": "0"
+            },
+            "onRelease": null,
+            "onLongRelease": null,
+            "onHold": null,
+            "LongReleaseDelay": 350,
+            "HoldDelay": 350,
+            "RepeatDelay": 0
+          },
+          "DeviceType": "Button",
+          "DeviceName": "Cabin_Press_High",
+          "GUID": "ce1d2bac-d7ba-49ea-b668-2ac7f9d7004d",
+          "Active": true,
+          "Name": "Cabin_Pressure_High",
+          "Type": "InputConfigItem",
+          "ModuleSerial": "BOB Board/ SN-378-827",
+          "Preconditions": [],
+          "Modifiers": {
+            "Items": []
+          },
+          "ConfigRefs": [],
+          "RawValue": "",
+          "Value": "",
+          "Status": {}
+        },
+        {
+          "button": {
+            "onPress": {
+              "Type": "MSFS2020CustomInputAction",
+              "Command": "3 (>L:FSR_M500_PRESSURIZATION_ECS_KNOB)\n",
+              "PresetId": "0"
+            },
+            "onRelease": null,
+            "onLongRelease": null,
+            "onHold": null,
+            "LongReleaseDelay": 350,
+            "HoldDelay": 350,
+            "RepeatDelay": 0
+          },
+          "DeviceType": "Button",
+          "DeviceName": "Cabin_Press_Emer",
+          "GUID": "f7593690-7881-43d6-ba99-0dfb55a50149",
+          "Active": true,
+          "Name": "Cabin_Pressure_Emergency",
+          "Type": "InputConfigItem",
+          "ModuleSerial": "BOB Board/ SN-378-827",
+          "Preconditions": [],
+          "Modifiers": {
+            "Items": []
+          },
+          "ConfigRefs": [],
+          "RawValue": "",
+          "Value": "",
+          "Status": {}
+        },
+        {
+          "button": {
+            "onPress": {
+              "Type": "MSFS2020CustomInputAction",
+              "Command": "(>K:GEAR_DOWN)",
+              "PresetId": "c713f67d-03cb-48c9-a3d5-0665a509837b"
+            },
+            "onRelease": {
+              "Type": "MSFS2020CustomInputAction",
+              "Command": "(>K:GEAR_UP)",
+              "PresetId": "fe68cf20-2c27-4532-8ab3-bd5c605a197c"
+            },
+            "onLongRelease": null,
+            "onHold": null,
+            "LongReleaseDelay": 350,
+            "HoldDelay": 350,
+            "RepeatDelay": 0
+          },
+          "DeviceType": "Button",
+          "DeviceName": "Gear",
+          "GUID": "65dc20d7-0e9f-4d43-b385-4cba36ee145e",
+          "Active": true,
+          "Name": "Landing_Gear",
+          "Type": "InputConfigItem",
+          "ModuleSerial": "BOB Board/ SN-378-827",
+          "Preconditions": [],
+          "Modifiers": {
+            "Items": []
+          },
+          "ConfigRefs": [],
+          "RawValue": "",
+          "Value": "",
+          "Status": {}
+        },
+        {
+          "button": {
+            "onPress": {
+              "Type": "MSFS2020CustomInputAction",
+              "Command": "1 (>K:PARKING_BRAKE_SET)",
+              "PresetId": "bfa5f4f9-0f44-49d0-9382-929b6e96c4ef"
+            },
+            "onRelease": {
+              "Type": "MSFS2020CustomInputAction",
+              "Command": "0 (>K:PARKING_BRAKE_SET)",
+              "PresetId": "3556ab94-09b7-43be-a226-b37ea20d9df1"
+            },
+            "onLongRelease": null,
+            "onHold": null,
+            "LongReleaseDelay": 350,
+            "HoldDelay": 350,
+            "RepeatDelay": 0
+          },
+          "DeviceType": "Button",
+          "DeviceName": "Park_Brake",
+          "GUID": "1ac1052d-6ceb-4e4a-a05b-4482b55a0f6c",
+          "Active": true,
+          "Name": "Parking_Brake",
+          "Type": "InputConfigItem",
+          "ModuleSerial": "BOB Board/ SN-378-827",
+          "Preconditions": [],
+          "Modifiers": {
+            "Items": []
+          },
+          "ConfigRefs": [],
+          "RawValue": "",
+          "Value": "",
+          "Status": {}
+        },
+        {
+          "button": {
+            "onPress": {
+              "Type": "MSFS2020CustomInputAction",
+              "Command": "100 (>L:FSR_M500_BLEED_LEVER)",
+              "PresetId": "5d233545-662b-44f8-b55d-f595797683eb"
+            },
+            "onRelease": {
+              "Type": "MSFS2020CustomInputAction",
+              "Command": "0 (>L:FSR_M500_BLEED_LEVER)",
+              "PresetId": "113412cf-c272-46cf-a08e-51e067f83425"
+            },
+            "onLongRelease": null,
+            "onHold": null,
+            "LongReleaseDelay": 350,
+            "HoldDelay": 350,
+            "RepeatDelay": 0
+          },
+          "DeviceType": "Button",
+          "DeviceName": "Bleed_Air",
+          "GUID": "a073d095-04a2-4b40-97eb-793f812416ec",
+          "Active": true,
+          "Name": "Bleed_Air",
+          "Type": "InputConfigItem",
+          "ModuleSerial": "BOB Board/ SN-378-827",
+          "Preconditions": [],
+          "Modifiers": {
+            "Items": []
+          },
+          "ConfigRefs": [],
+          "RawValue": "",
+          "Value": "",
+          "Status": {}
+        },
+        {
+          "button": {
+            "onPress": {
+              "Type": "MSFS2020CustomInputAction",
+              "Command": "(>H:AS1000_MFD_SOFTKEYS_1)",
+              "PresetId": "73261a9b-17e6-4de8-997f-59e624136da6"
+            },
+            "onRelease": null,
+            "onLongRelease": null,
+            "onHold": null,
+            "LongReleaseDelay": 350,
+            "HoldDelay": 350,
+            "RepeatDelay": 0
+          },
+          "DeviceType": "Button",
+          "DeviceName": "BottomButton01",
+          "GUID": "5257c908-06a7-439e-b8bb-898d871916e9",
+          "Active": true,
+          "Name": "AS1000_MFD_BottomButton_1",
+          "Type": "InputConfigItem",
+          "ModuleSerial": "G1000/ SN-63C-8CC",
+          "Preconditions": [],
+          "Modifiers": {
+            "Items": []
+          },
+          "ConfigRefs": [],
+          "RawValue": "",
+          "Value": "",
+          "Status": {}
+        },
+        {
+          "button": {
+            "onPress": {
+              "Type": "MSFS2020CustomInputAction",
+              "Command": "(>H:AS1000_MFD_SOFTKEYS_2)",
+              "PresetId": "2774b577-3ba1-423a-8074-86a68170a81b"
+            },
+            "onRelease": null,
+            "onLongRelease": null,
+            "onHold": null,
+            "LongReleaseDelay": 350,
+            "HoldDelay": 350,
+            "RepeatDelay": 0
+          },
+          "DeviceType": "Button",
+          "DeviceName": "BottomButton02",
+          "GUID": "71b70027-1ffc-4ece-84ef-2d1be82ac72a",
+          "Active": true,
+          "Name": "AS1000_MFD_BottomButton_2",
+          "Type": "InputConfigItem",
+          "ModuleSerial": "G1000/ SN-63C-8CC",
+          "Preconditions": [],
+          "Modifiers": {
+            "Items": []
+          },
+          "ConfigRefs": [],
+          "RawValue": "",
+          "Value": "",
+          "Status": {}
+        },
+        {
+          "button": {
+            "onPress": {
+              "Type": "MSFS2020CustomInputAction",
+              "Command": "(>H:AS1000_MFD_SOFTKEYS_3)",
+              "PresetId": "8fd01e9b-5546-4128-bf73-58036c3b4eff"
+            },
+            "onRelease": null,
+            "onLongRelease": null,
+            "onHold": null,
+            "LongReleaseDelay": 350,
+            "HoldDelay": 350,
+            "RepeatDelay": 0
+          },
+          "DeviceType": "Button",
+          "DeviceName": "BottomButton03",
+          "GUID": "1c38c8ba-6a1f-4b2c-8209-e724296e8ebb",
+          "Active": true,
+          "Name": "AS1000_MFD_BottomButton_3",
+          "Type": "InputConfigItem",
+          "ModuleSerial": "G1000/ SN-63C-8CC",
+          "Preconditions": [],
+          "Modifiers": {
+            "Items": []
+          },
+          "ConfigRefs": [],
+          "RawValue": "",
+          "Value": "",
+          "Status": {}
+        },
+        {
+          "button": {
+            "onPress": {
+              "Type": "MSFS2020CustomInputAction",
+              "Command": "(>H:AS1000_MFD_SOFTKEYS_4)",
+              "PresetId": "07fd7871-b390-4136-b63c-ced0280449b4"
+            },
+            "onRelease": null,
+            "onLongRelease": null,
+            "onHold": null,
+            "LongReleaseDelay": 350,
+            "HoldDelay": 350,
+            "RepeatDelay": 0
+          },
+          "DeviceType": "Button",
+          "DeviceName": "BottomButton04",
+          "GUID": "7e2676dc-404a-4206-8451-21c2f71e3d08",
+          "Active": true,
+          "Name": "AS1000_MFD_BottomButton_4",
+          "Type": "InputConfigItem",
+          "ModuleSerial": "G1000/ SN-63C-8CC",
+          "Preconditions": [],
+          "Modifiers": {
+            "Items": []
+          },
+          "ConfigRefs": [],
+          "RawValue": "",
+          "Value": "",
+          "Status": {}
+        },
+        {
+          "button": {
+            "onPress": {
+              "Type": "MSFS2020CustomInputAction",
+              "Command": "(>H:AS1000_MFD_SOFTKEYS_5)",
+              "PresetId": "8e1ded32-63e4-4a8d-8b42-21a84ac2fba5"
+            },
+            "onRelease": null,
+            "onLongRelease": null,
+            "onHold": null,
+            "LongReleaseDelay": 350,
+            "HoldDelay": 350,
+            "RepeatDelay": 0
+          },
+          "DeviceType": "Button",
+          "DeviceName": "BottomButton05",
+          "GUID": "e1933774-4cce-4c22-af3f-4ecd217bf5ac",
+          "Active": true,
+          "Name": "AS1000_MFD_BottomButton_5",
+          "Type": "InputConfigItem",
+          "ModuleSerial": "G1000/ SN-63C-8CC",
+          "Preconditions": [],
+          "Modifiers": {
+            "Items": []
+          },
+          "ConfigRefs": [],
+          "RawValue": "",
+          "Value": "",
+          "Status": {}
+        },
+        {
+          "button": {
+            "onPress": {
+              "Type": "MSFS2020CustomInputAction",
+              "Command": "(>H:AS1000_MFD_SOFTKEYS_6)",
+              "PresetId": "c96ca1d5-b534-42f2-940f-3647f5bbb86c"
+            },
+            "onRelease": null,
+            "onLongRelease": null,
+            "onHold": null,
+            "LongReleaseDelay": 350,
+            "HoldDelay": 350,
+            "RepeatDelay": 0
+          },
+          "DeviceType": "Button",
+          "DeviceName": "BottomButton06",
+          "GUID": "57bd4fe6-3c2a-4141-b5b0-340764b73126",
+          "Active": true,
+          "Name": "AS1000_MFD_BottomButton_6",
+          "Type": "InputConfigItem",
+          "ModuleSerial": "G1000/ SN-63C-8CC",
+          "Preconditions": [],
+          "Modifiers": {
+            "Items": []
+          },
+          "ConfigRefs": [],
+          "RawValue": "",
+          "Value": "",
+          "Status": {}
+        },
+        {
+          "button": {
+            "onPress": {
+              "Type": "MSFS2020CustomInputAction",
+              "Command": "(>H:AS1000_MFD_SOFTKEYS_7)",
+              "PresetId": "879abfc1-055c-4241-9067-1dacedd05eac"
+            },
+            "onRelease": null,
+            "onLongRelease": null,
+            "onHold": null,
+            "LongReleaseDelay": 350,
+            "HoldDelay": 350,
+            "RepeatDelay": 0
+          },
+          "DeviceType": "Button",
+          "DeviceName": "BottomButton07",
+          "GUID": "f678ec49-2aa6-4c12-bbae-8dd17e183f11",
+          "Active": true,
+          "Name": "AS1000_MFD_BottomButton_7",
+          "Type": "InputConfigItem",
+          "ModuleSerial": "G1000/ SN-63C-8CC",
+          "Preconditions": [],
+          "Modifiers": {
+            "Items": []
+          },
+          "ConfigRefs": [],
+          "RawValue": "",
+          "Value": "",
+          "Status": {}
+        },
+        {
+          "button": {
+            "onPress": {
+              "Type": "MSFS2020CustomInputAction",
+              "Command": "(>H:AS1000_MFD_SOFTKEYS_8)",
+              "PresetId": "ff89fed3-33d5-4a66-9c90-77db454e67b4"
+            },
+            "onRelease": null,
+            "onLongRelease": null,
+            "onHold": null,
+            "LongReleaseDelay": 350,
+            "HoldDelay": 350,
+            "RepeatDelay": 0
+          },
+          "DeviceType": "Button",
+          "DeviceName": "BottomButton08",
+          "GUID": "0fe32bbe-9ba4-492d-8243-7dd9d088400e",
+          "Active": true,
+          "Name": "AS1000_MFD_BottomButton_8",
+          "Type": "InputConfigItem",
+          "ModuleSerial": "G1000/ SN-63C-8CC",
+          "Preconditions": [],
+          "Modifiers": {
+            "Items": []
+          },
+          "ConfigRefs": [],
+          "RawValue": "",
+          "Value": "",
+          "Status": {}
+        },
+        {
+          "button": {
+            "onPress": {
+              "Type": "MSFS2020CustomInputAction",
+              "Command": "(>H:AS1000_MFD_SOFTKEYS_9)",
+              "PresetId": "46d2a1ef-58b4-4e1e-a6a0-3ca88e9a9dbb"
+            },
+            "onRelease": null,
+            "onLongRelease": null,
+            "onHold": null,
+            "LongReleaseDelay": 350,
+            "HoldDelay": 350,
+            "RepeatDelay": 0
+          },
+          "DeviceType": "Button",
+          "DeviceName": "BottomButton09",
+          "GUID": "59f03e46-3657-4b33-b226-43b11f2fa125",
+          "Active": true,
+          "Name": "AS1000_MFD_BottomButton_9",
+          "Type": "InputConfigItem",
+          "ModuleSerial": "G1000/ SN-63C-8CC",
+          "Preconditions": [],
+          "Modifiers": {
+            "Items": []
+          },
+          "ConfigRefs": [],
+          "RawValue": "",
+          "Value": "",
+          "Status": {}
+        },
+        {
+          "button": {
+            "onPress": {
+              "Type": "MSFS2020CustomInputAction",
+              "Command": "(>H:AS1000_MFD_SOFTKEYS_10)",
+              "PresetId": "5fd21128-9a0a-433d-bdad-b7ac6195165b"
+            },
+            "onRelease": null,
+            "onLongRelease": null,
+            "onHold": null,
+            "LongReleaseDelay": 350,
+            "HoldDelay": 350,
+            "RepeatDelay": 0
+          },
+          "DeviceType": "Button",
+          "DeviceName": "BottomButton10",
+          "GUID": "7a00fd81-ff86-4518-a004-8b4cff783916",
+          "Active": true,
+          "Name": "AS1000_MFD_BottomButton_10",
+          "Type": "InputConfigItem",
+          "ModuleSerial": "G1000/ SN-63C-8CC",
+          "Preconditions": [],
+          "Modifiers": {
+            "Items": []
+          },
+          "ConfigRefs": [],
+          "RawValue": "",
+          "Value": "",
+          "Status": {}
+        },
+        {
+          "button": {
+            "onPress": {
+              "Type": "MSFS2020CustomInputAction",
+              "Command": "(>H:AS1000_MFD_SOFTKEYS_11)",
+              "PresetId": "78e2c349-3c70-4246-af7e-dbd74a9bbc9b"
+            },
+            "onRelease": null,
+            "onLongRelease": null,
+            "onHold": null,
+            "LongReleaseDelay": 350,
+            "HoldDelay": 350,
+            "RepeatDelay": 0
+          },
+          "DeviceType": "Button",
+          "DeviceName": "BottomButton11",
+          "GUID": "c65e3137-23dc-4d84-a49d-79eb9979162d",
+          "Active": true,
+          "Name": "AS1000_MFD_BottomButton_11",
+          "Type": "InputConfigItem",
+          "ModuleSerial": "G1000/ SN-63C-8CC",
+          "Preconditions": [],
+          "Modifiers": {
+            "Items": []
+          },
+          "ConfigRefs": [],
+          "RawValue": "",
+          "Value": "",
+          "Status": {}
+        },
+        {
+          "button": {
+            "onPress": {
+              "Type": "MSFS2020CustomInputAction",
+              "Command": "(>H:AS1000_MFD_SOFTKEYS_12)",
+              "PresetId": "22851d94-6d9b-47bf-9169-e43379e9ee9a"
+            },
+            "onRelease": null,
+            "onLongRelease": null,
+            "onHold": null,
+            "LongReleaseDelay": 350,
+            "HoldDelay": 350,
+            "RepeatDelay": 0
+          },
+          "DeviceType": "Button",
+          "DeviceName": "BottomButton12",
+          "GUID": "22ed638e-6282-4864-af45-f0b66416dcd9",
+          "Active": true,
+          "Name": "AS1000_MFD_BottomButton_12",
+          "Type": "InputConfigItem",
+          "ModuleSerial": "G1000/ SN-63C-8CC",
+          "Preconditions": [],
+          "Modifiers": {
+            "Items": []
+          },
+          "ConfigRefs": [],
+          "RawValue": "",
+          "Value": "",
+          "Status": {}
+        },
+        {
+          "button": {
+            "onPress": {
+              "Type": "MSFS2020CustomInputAction",
+              "Command": "(>H:AS1000_PFD_SOFTKEYS_1)",
+              "PresetId": "8bc40426-4f02-4ef2-9a4f-ed242c706635"
+            },
+            "onRelease": null,
+            "onLongRelease": null,
+            "onHold": null,
+            "LongReleaseDelay": 350,
+            "HoldDelay": 350,
+            "RepeatDelay": 0
+          },
+          "DeviceType": "Button",
+          "DeviceName": "BottomButton01",
+          "GUID": "ec7d286a-ef7e-4e66-9e59-b9907ac7e6e0",
+          "Active": true,
+          "Name": "AS1000_PFD_BottomButton_1",
+          "Type": "InputConfigItem",
+          "ModuleSerial": "G1000_PFD/ SN-830-A75",
+          "Preconditions": [],
+          "Modifiers": {
+            "Items": []
+          },
+          "ConfigRefs": [],
+          "RawValue": "",
+          "Value": "",
+          "Status": {}
+        },
+        {
+          "button": {
+            "onPress": {
+              "Type": "MSFS2020CustomInputAction",
+              "Command": "(>H:AS1000_PFD_SOFTKEYS_2)",
+              "PresetId": "ebfd5493-6504-45df-8783-ea04b10a94f6"
+            },
+            "onRelease": null,
+            "onLongRelease": null,
+            "onHold": null,
+            "LongReleaseDelay": 350,
+            "HoldDelay": 350,
+            "RepeatDelay": 0
+          },
+          "DeviceType": "Button",
+          "DeviceName": "BottomButton02",
+          "GUID": "c2ce7732-d855-4065-b8d0-6430d9013fe9",
+          "Active": true,
+          "Name": "AS1000_PFD_BottomButton_2",
+          "Type": "InputConfigItem",
+          "ModuleSerial": "G1000_PFD/ SN-830-A75",
+          "Preconditions": [],
+          "Modifiers": {
+            "Items": []
+          },
+          "ConfigRefs": [],
+          "RawValue": "",
+          "Value": "",
+          "Status": {}
+        },
+        {
+          "button": {
+            "onPress": {
+              "Type": "MSFS2020CustomInputAction",
+              "Command": "(>H:AS1000_PFD_SOFTKEYS_3)",
+              "PresetId": "1b65283f-b2f1-4db2-8ffe-1d7b6d549ec7"
+            },
+            "onRelease": null,
+            "onLongRelease": null,
+            "onHold": null,
+            "LongReleaseDelay": 350,
+            "HoldDelay": 350,
+            "RepeatDelay": 0
+          },
+          "DeviceType": "Button",
+          "DeviceName": "BottomButton03",
+          "GUID": "90b1e6d6-0fad-461e-b127-2166da705cb4",
+          "Active": true,
+          "Name": "AS1000_PFD_BottomButton_3",
+          "Type": "InputConfigItem",
+          "ModuleSerial": "G1000_PFD/ SN-830-A75",
+          "Preconditions": [],
+          "Modifiers": {
+            "Items": []
+          },
+          "ConfigRefs": [],
+          "RawValue": "",
+          "Value": "",
+          "Status": {}
+        },
+        {
+          "button": {
+            "onPress": {
+              "Type": "MSFS2020CustomInputAction",
+              "Command": "(>H:AS1000_PFD_SOFTKEYS_4)",
+              "PresetId": "952f663e-5f95-467b-bc52-be694818802c"
+            },
+            "onRelease": null,
+            "onLongRelease": null,
+            "onHold": null,
+            "LongReleaseDelay": 350,
+            "HoldDelay": 350,
+            "RepeatDelay": 0
+          },
+          "DeviceType": "Button",
+          "DeviceName": "BottomButton04",
+          "GUID": "a0871d1a-6080-49b1-ad82-aec7c4f1b09f",
+          "Active": true,
+          "Name": "AS1000_PFD_BottomButton_4",
+          "Type": "InputConfigItem",
+          "ModuleSerial": "G1000_PFD/ SN-830-A75",
+          "Preconditions": [],
+          "Modifiers": {
+            "Items": []
+          },
+          "ConfigRefs": [],
+          "RawValue": "",
+          "Value": "",
+          "Status": {}
+        },
+        {
+          "button": {
+            "onPress": {
+              "Type": "MSFS2020CustomInputAction",
+              "Command": "(>H:AS1000_PFD_SOFTKEYS_5)",
+              "PresetId": "784d87b9-a499-4f16-8fbb-f556d8a174aa"
+            },
+            "onRelease": null,
+            "onLongRelease": null,
+            "onHold": null,
+            "LongReleaseDelay": 350,
+            "HoldDelay": 350,
+            "RepeatDelay": 0
+          },
+          "DeviceType": "Button",
+          "DeviceName": "BottomButton05",
+          "GUID": "b3c9746d-020e-4636-ac20-dbef48b36da2",
+          "Active": true,
+          "Name": "AS1000_PFD_BottomButton_5",
+          "Type": "InputConfigItem",
+          "ModuleSerial": "G1000_PFD/ SN-830-A75",
+          "Preconditions": [],
+          "Modifiers": {
+            "Items": []
+          },
+          "ConfigRefs": [],
+          "RawValue": "",
+          "Value": "",
+          "Status": {}
+        },
+        {
+          "button": {
+            "onPress": {
+              "Type": "MSFS2020CustomInputAction",
+              "Command": "(>H:AS1000_PFD_SOFTKEYS_6)",
+              "PresetId": "c177c0bf-78d9-47b8-b1f5-906e0126fe85"
+            },
+            "onRelease": null,
+            "onLongRelease": null,
+            "onHold": null,
+            "LongReleaseDelay": 350,
+            "HoldDelay": 350,
+            "RepeatDelay": 0
+          },
+          "DeviceType": "Button",
+          "DeviceName": "BottomButton06",
+          "GUID": "b8527833-2cd5-4cba-a985-3d167261b24f",
+          "Active": true,
+          "Name": "AS1000_PFD_BottomButton_6",
+          "Type": "InputConfigItem",
+          "ModuleSerial": "G1000_PFD/ SN-830-A75",
+          "Preconditions": [],
+          "Modifiers": {
+            "Items": []
+          },
+          "ConfigRefs": [],
+          "RawValue": "",
+          "Value": "",
+          "Status": {}
+        },
+        {
+          "button": {
+            "onPress": {
+              "Type": "MSFS2020CustomInputAction",
+              "Command": "(>H:AS1000_PFD_SOFTKEYS_7)",
+              "PresetId": "a706b901-fd6d-4a1f-893a-4dc9f5c2ae4c"
+            },
+            "onRelease": null,
+            "onLongRelease": null,
+            "onHold": null,
+            "LongReleaseDelay": 350,
+            "HoldDelay": 350,
+            "RepeatDelay": 0
+          },
+          "DeviceType": "Button",
+          "DeviceName": "BottomButton07",
+          "GUID": "4f5a59ba-c542-43db-b31e-bb71a8cae49e",
+          "Active": true,
+          "Name": "AS1000_PFD_BottomButton_7",
+          "Type": "InputConfigItem",
+          "ModuleSerial": "G1000_PFD/ SN-830-A75",
+          "Preconditions": [],
+          "Modifiers": {
+            "Items": []
+          },
+          "ConfigRefs": [],
+          "RawValue": "",
+          "Value": "",
+          "Status": {}
+        },
+        {
+          "button": {
+            "onPress": {
+              "Type": "MSFS2020CustomInputAction",
+              "Command": "(>H:AS1000_PFD_SOFTKEYS_8)",
+              "PresetId": "10eb38b1-21eb-4e69-8f7e-3be816ca4403"
+            },
+            "onRelease": null,
+            "onLongRelease": null,
+            "onHold": null,
+            "LongReleaseDelay": 350,
+            "HoldDelay": 350,
+            "RepeatDelay": 0
+          },
+          "DeviceType": "Button",
+          "DeviceName": "BottomButton08",
+          "GUID": "144c2185-52b6-4b14-845e-1b54fbc9920f",
+          "Active": true,
+          "Name": "AS1000_PFD_BottomButton_8",
+          "Type": "InputConfigItem",
+          "ModuleSerial": "G1000_PFD/ SN-830-A75",
+          "Preconditions": [],
+          "Modifiers": {
+            "Items": []
+          },
+          "ConfigRefs": [],
+          "RawValue": "",
+          "Value": "",
+          "Status": {}
+        },
+        {
+          "button": {
+            "onPress": {
+              "Type": "MSFS2020CustomInputAction",
+              "Command": "(>H:AS1000_PFD_SOFTKEYS_9)",
+              "PresetId": "21ffc3fc-5f57-4689-9612-63cc9e7c53c4"
+            },
+            "onRelease": null,
+            "onLongRelease": null,
+            "onHold": null,
+            "LongReleaseDelay": 350,
+            "HoldDelay": 350,
+            "RepeatDelay": 0
+          },
+          "DeviceType": "Button",
+          "DeviceName": "BottomButton09",
+          "GUID": "538b3d1f-be04-46f8-af63-cafb31f45b2b",
+          "Active": true,
+          "Name": "AS1000_PFD_BottomButton_9",
+          "Type": "InputConfigItem",
+          "ModuleSerial": "G1000_PFD/ SN-830-A75",
+          "Preconditions": [],
+          "Modifiers": {
+            "Items": []
+          },
+          "ConfigRefs": [],
+          "RawValue": "",
+          "Value": "",
+          "Status": {}
+        },
+        {
+          "button": {
+            "onPress": {
+              "Type": "MSFS2020CustomInputAction",
+              "Command": "(>H:AS1000_PFD_SOFTKEYS_10)",
+              "PresetId": "93d57e87-643b-4ca2-8190-590c736b4280"
+            },
+            "onRelease": null,
+            "onLongRelease": null,
+            "onHold": null,
+            "LongReleaseDelay": 350,
+            "HoldDelay": 350,
+            "RepeatDelay": 0
+          },
+          "DeviceType": "Button",
+          "DeviceName": "BottomButton10",
+          "GUID": "cd54163f-373e-4435-8807-b1fd11fc2c07",
+          "Active": true,
+          "Name": "AS1000_PFD_BottomButton_10",
+          "Type": "InputConfigItem",
+          "ModuleSerial": "G1000_PFD/ SN-830-A75",
+          "Preconditions": [],
+          "Modifiers": {
+            "Items": []
+          },
+          "ConfigRefs": [],
+          "RawValue": "",
+          "Value": "",
+          "Status": {}
+        },
+        {
+          "button": {
+            "onPress": {
+              "Type": "MSFS2020CustomInputAction",
+              "Command": "(>H:AS1000_PFD_SOFTKEYS_11)",
+              "PresetId": "235e322b-1bf2-4328-94a8-a300e4bd59f2"
+            },
+            "onRelease": null,
+            "onLongRelease": null,
+            "onHold": null,
+            "LongReleaseDelay": 350,
+            "HoldDelay": 350,
+            "RepeatDelay": 0
+          },
+          "DeviceType": "Button",
+          "DeviceName": "BottomButton11",
+          "GUID": "baf1ef92-5c2f-4d68-bc54-0b4076515e48",
+          "Active": true,
+          "Name": "AS1000_PFD_BottomButton_11",
+          "Type": "InputConfigItem",
+          "ModuleSerial": "G1000_PFD/ SN-830-A75",
+          "Preconditions": [],
+          "Modifiers": {
+            "Items": []
+          },
+          "ConfigRefs": [],
+          "RawValue": "",
+          "Value": "",
+          "Status": {}
+        },
+        {
+          "button": {
+            "onPress": {
+              "Type": "MSFS2020CustomInputAction",
+              "Command": "(>H:AS1000_PFD_SOFTKEYS_12)",
+              "PresetId": "7cb85aba-44b1-40ac-97be-addd32d4b802"
+            },
+            "onRelease": null,
+            "onLongRelease": null,
+            "onHold": null,
+            "LongReleaseDelay": 350,
+            "HoldDelay": 350,
+            "RepeatDelay": 0
+          },
+          "DeviceType": "Button",
+          "DeviceName": "BottomButton12",
+          "GUID": "7b043aa9-964b-4613-aa29-11e72b71467e",
+          "Active": true,
+          "Name": "AS1000_PFD_BottomButton_12",
+          "Type": "InputConfigItem",
+          "ModuleSerial": "G1000_PFD/ SN-830-A75",
+          "Preconditions": [],
+          "Modifiers": {
+            "Items": []
+          },
+          "ConfigRefs": [],
+          "RawValue": "",
+          "Value": "",
+          "Status": {}
+        },
+        {
+          "button": {
+            "onPress": {
+              "Type": "MSFS2020CustomInputAction",
+              "Command": "(>H:AS1000_PFD_DIRECTTO)",
+              "PresetId": "2766a15c-f7a6-4a7e-ae54-8a3f35ea5047"
+            },
+            "onRelease": null,
+            "onLongRelease": null,
+            "onHold": null,
+            "LongReleaseDelay": 350,
+            "HoldDelay": 350,
+            "RepeatDelay": 0
+          },
+          "DeviceType": "Button",
+          "DeviceName": "BtnFMS_Direct",
+          "GUID": "ab782529-5efe-41d0-98d2-aaa3d776508c",
+          "Active": true,
+          "Name": "AS1000_PFD_FMS_Direct",
+          "Type": "InputConfigItem",
+          "ModuleSerial": "G1000_PFD/ SN-830-A75",
+          "Preconditions": [],
+          "Modifiers": {
+            "Items": []
+          },
+          "ConfigRefs": [],
+          "RawValue": "",
+          "Value": "",
+          "Status": {}
+        },
+        {
+          "button": {
+            "onPress": {
+              "Type": "MSFS2020CustomInputAction",
+              "Command": "(>H:AS1000_PFD_FPL_Push)",
+              "PresetId": "22812c0c-f2f4-419c-b12c-0d5889752463"
+            },
+            "onRelease": null,
+            "onLongRelease": null,
+            "onHold": null,
+            "LongReleaseDelay": 350,
+            "HoldDelay": 350,
+            "RepeatDelay": 0
+          },
+          "DeviceType": "Button",
+          "DeviceName": "BtnFMS_FPL",
+          "GUID": "d6922c2e-30f3-46d9-9dc7-a158c81c15e9",
+          "Active": true,
+          "Name": "AS1000_PFD_FMS_FPL",
+          "Type": "InputConfigItem",
+          "ModuleSerial": "G1000_PFD/ SN-830-A75",
+          "Preconditions": [],
+          "Modifiers": {
+            "Items": []
+          },
+          "ConfigRefs": [],
+          "RawValue": "",
+          "Value": "",
+          "Status": {}
+        },
+        {
+          "button": {
+            "onPress": {
+              "Type": "MSFS2020CustomInputAction",
+              "Command": "(>H:AS1000_PFD_CLR)",
+              "PresetId": "dc6ffbf7-9ead-421c-850c-b3ac8198041f"
+            },
+            "onRelease": null,
+            "onLongRelease": null,
+            "onHold": null,
+            "LongReleaseDelay": 350,
+            "HoldDelay": 350,
+            "RepeatDelay": 0
+          },
+          "DeviceType": "Button",
+          "DeviceName": "BtnFMS_CLR",
+          "GUID": "b19c9c69-1ac4-4409-ab82-f07a7735214f",
+          "Active": true,
+          "Name": "AS1000_PFD_FMS_CLR",
+          "Type": "InputConfigItem",
+          "ModuleSerial": "G1000_PFD/ SN-830-A75",
+          "Preconditions": [],
+          "Modifiers": {
+            "Items": []
+          },
+          "ConfigRefs": [],
+          "RawValue": "",
+          "Value": "",
+          "Status": {}
+        },
+        {
+          "button": {
+            "onPress": {
+              "Type": "MSFS2020CustomInputAction",
+              "Command": "(>H:AS1000_PFD_MENU_Push)",
+              "PresetId": "3824ae98-519c-40ef-b083-bf1d9fd3d451"
+            },
+            "onRelease": null,
+            "onLongRelease": null,
+            "onHold": null,
+            "LongReleaseDelay": 350,
+            "HoldDelay": 350,
+            "RepeatDelay": 0
+          },
+          "DeviceType": "Button",
+          "DeviceName": "BtnFMS_Menu",
+          "GUID": "e4964c3b-5053-4708-a75a-c1590a95f6e6",
+          "Active": true,
+          "Name": "AS1000_PFD_FMS_Menu",
+          "Type": "InputConfigItem",
+          "ModuleSerial": "G1000_PFD/ SN-830-A75",
+          "Preconditions": [],
+          "Modifiers": {
+            "Items": []
+          },
+          "ConfigRefs": [],
+          "RawValue": "",
+          "Value": "",
+          "Status": {}
+        },
+        {
+          "button": {
+            "onPress": {
+              "Type": "MSFS2020CustomInputAction",
+              "Command": "(>H:AS1000_PFD_PROC_Push)",
+              "PresetId": "cdeef2be-8be8-440f-91d8-d138f238fdc6"
+            },
+            "onRelease": null,
+            "onLongRelease": null,
+            "onHold": null,
+            "LongReleaseDelay": 350,
+            "HoldDelay": 350,
+            "RepeatDelay": 0
+          },
+          "DeviceType": "Button",
+          "DeviceName": "BtnFMS_Proc",
+          "GUID": "00a065ba-3db3-4454-8eb5-51bafb74a24b",
+          "Active": true,
+          "Name": "AS1000_PFD_FMS_Proc",
+          "Type": "InputConfigItem",
+          "ModuleSerial": "G1000_PFD/ SN-830-A75",
+          "Preconditions": [],
+          "Modifiers": {
+            "Items": []
+          },
+          "ConfigRefs": [],
+          "RawValue": "",
+          "Value": "",
+          "Status": {}
+        },
+        {
+          "button": {
+            "onPress": {
+              "Type": "MSFS2020CustomInputAction",
+              "Command": "(>H:AS1000_PFD_ENT_Push)",
+              "PresetId": "361208b1-4161-4752-9c65-8146fa5cb14d"
+            },
+            "onRelease": null,
+            "onLongRelease": null,
+            "onHold": null,
+            "LongReleaseDelay": 350,
+            "HoldDelay": 350,
+            "RepeatDelay": 0
+          },
+          "DeviceType": "Button",
+          "DeviceName": "BtnFMS_Ent",
+          "GUID": "f9045037-12ad-48be-bb09-843127d51ce8",
+          "Active": true,
+          "Name": "AS1000_PFD_FMS_Enter",
+          "Type": "InputConfigItem",
+          "ModuleSerial": "G1000_PFD/ SN-830-A75",
+          "Preconditions": [],
+          "Modifiers": {
+            "Items": []
+          },
+          "ConfigRefs": [],
+          "RawValue": "",
+          "Value": "",
+          "Status": {}
+        },
+        {
+          "encoder": {
+            "onLeft": {
+              "Type": "MSFS2020CustomInputAction",
+              "Command": "(>H:AS1000_MFD_RANGE_DEC)",
+              "PresetId": "a3c8d8e0-e6a5-4c19-9b3e-31178dfa2ebb"
+            },
+            "onLeftFast": null,
+            "onRight": {
+              "Type": "MSFS2020CustomInputAction",
+              "Command": "(>H:AS1000_MFD_RANGE_INC)",
+              "PresetId": "fdcb4bc4-96ee-4fa8-8514-ae2d00c14336"
+            },
+            "onRightFast": null
+          },
+          "DeviceType": "Encoder",
+          "DeviceName": "JS_Map_Range",
+          "GUID": "1695e864-7d2b-4739-830e-98b96f8c5f89",
+          "Active": true,
+          "Name": "AS1000_PFD_Map_Range",
+          "Type": "InputConfigItem",
+          "ModuleSerial": "G1000_PFD/ SN-830-A75",
+          "Preconditions": [],
+          "Modifiers": {
+            "Items": []
+          },
+          "ConfigRefs": [],
+          "RawValue": "",
+          "Value": "",
+          "Status": {}
+        },
+        {
+          "button": {
+            "onPress": {
+              "Type": "MSFS2020CustomInputAction",
+              "Command": "(>H:AS1000_PFD_JOYSTICK_PUSH)",
+              "PresetId": "8fb0272e-584c-4fdb-8ac1-b853124768bf"
+            },
+            "onRelease": null,
+            "onLongRelease": null,
+            "onHold": null,
+            "LongReleaseDelay": 350,
+            "HoldDelay": 350,
+            "RepeatDelay": 0
+          },
+          "DeviceType": "Button",
+          "DeviceName": "JS_Map_Push",
+          "GUID": "32b519ec-2212-452a-880d-6d1d9cb58d88",
+          "Active": true,
+          "Name": "AS1000_PFD_Map_Push",
+          "Type": "InputConfigItem",
+          "ModuleSerial": "G1000_PFD/ SN-830-A75",
+          "Preconditions": [],
+          "Modifiers": {
+            "Items": []
+          },
+          "ConfigRefs": [],
+          "RawValue": "",
+          "Value": "",
+          "Status": {}
+        },
+        {
+          "button": {
+            "onPress": {
+              "Type": "MSFS2020CustomInputAction",
+              "Command": "(>H:AS1000_PFD_JOYSTICK_UP)",
+              "PresetId": "6bb40234-5525-42f8-aef3-52ddb7336e29"
+            },
+            "onRelease": null,
+            "onLongRelease": null,
+            "onHold": null,
+            "LongReleaseDelay": 350,
+            "HoldDelay": 350,
+            "RepeatDelay": 0
+          },
+          "DeviceType": "Button",
+          "DeviceName": "JS_Map_Up",
+          "GUID": "7f829694-1eb2-4e2f-b879-9dd84ee1fdf5",
+          "Active": true,
+          "Name": "AS1000_PFD_Map_Up",
+          "Type": "InputConfigItem",
+          "ModuleSerial": "G1000_PFD/ SN-830-A75",
+          "Preconditions": [],
+          "Modifiers": {
+            "Items": []
+          },
+          "ConfigRefs": [],
+          "RawValue": "",
+          "Value": "",
+          "Status": {}
+        },
+        {
+          "button": {
+            "onPress": {
+              "Type": "MSFS2020CustomInputAction",
+              "Command": "(>H:AS1000_PFD_JOYSTICK_DOWN)",
+              "PresetId": "5f72fc77-8c85-480b-86b5-eebfcdbcb759"
+            },
+            "onRelease": null,
+            "onLongRelease": null,
+            "onHold": null,
+            "LongReleaseDelay": 350,
+            "HoldDelay": 350,
+            "RepeatDelay": 0
+          },
+          "DeviceType": "Button",
+          "DeviceName": "JS_Map_Down",
+          "GUID": "f2541165-d810-4aca-8e93-1f2e79884f57",
+          "Active": true,
+          "Name": "AS1000_PFD_Map_Down",
+          "Type": "InputConfigItem",
+          "ModuleSerial": "G1000_PFD/ SN-830-A75",
+          "Preconditions": [],
+          "Modifiers": {
+            "Items": []
+          },
+          "ConfigRefs": [],
+          "RawValue": "",
+          "Value": "",
+          "Status": {}
+        },
+        {
+          "button": {
+            "onPress": {
+              "Type": "MSFS2020CustomInputAction",
+              "Command": "(>H:AS1000_PFD_JOYSTICK_RIGHT)",
+              "PresetId": "ade27413-b399-467b-bdb1-f9dc8ef2e6c8"
+            },
+            "onRelease": null,
+            "onLongRelease": null,
+            "onHold": null,
+            "LongReleaseDelay": 350,
+            "HoldDelay": 350,
+            "RepeatDelay": 0
+          },
+          "DeviceType": "Button",
+          "DeviceName": "JS_Map_Right",
+          "GUID": "c1b397fb-9337-49d1-9270-ee0be1bc892e",
+          "Active": true,
+          "Name": "AS1000_PFD_Map_Right",
+          "Type": "InputConfigItem",
+          "ModuleSerial": "G1000_PFD/ SN-830-A75",
+          "Preconditions": [],
+          "Modifiers": {
+            "Items": []
+          },
+          "ConfigRefs": [],
+          "RawValue": "",
+          "Value": "",
+          "Status": {}
+        },
+        {
+          "button": {
+            "onPress": {
+              "Type": "MSFS2020CustomInputAction",
+              "Command": "(>H:AS1000_PFD_JOYSTICK_LEFT)",
+              "PresetId": "16f31eee-612c-410f-9825-e15ee959e268"
+            },
+            "onRelease": null,
+            "onLongRelease": null,
+            "onHold": null,
+            "LongReleaseDelay": 350,
+            "HoldDelay": 350,
+            "RepeatDelay": 0
+          },
+          "DeviceType": "Button",
+          "DeviceName": "JS_Map_Left",
+          "GUID": "a8b77b81-21c2-4522-8fa2-a28a9ff375db",
+          "Active": true,
+          "Name": "AS1000_PFD_Map_Left",
+          "Type": "InputConfigItem",
+          "ModuleSerial": "G1000_PFD/ SN-830-A75",
+          "Preconditions": [],
+          "Modifiers": {
+            "Items": []
+          },
+          "ConfigRefs": [],
+          "RawValue": "",
+          "Value": "",
+          "Status": {}
+        },
+        {
+          "Source": {
+            "SimConnectValue": {
+              "UUID": "0",
+              "Value": "(L:MFD_RNG_PAN_UP,bool) 1 == if{ (E:SIMULATION TIME, second) 10 * near 2 % \n(>H:AS1000_MFD_JOYSTICK_UP) }",
+              "VarType": 2
+            },
+            "Type": "SimConnectSource"
+          },
+          "TestValue": {
+            "type": 1,
+            "Float64": 1.0,
+            "String": null
+          },
+          "DeviceType": "-",
+          "DeviceName": null,
+          "GUID": "eb6202a1-27ae-4ea4-bf42-410e7342c39b",
+          "Active": true,
+          "Name": "MFD PAN UP",
+          "Type": "OutputConfigItem",
+          "ModuleSerial": "-",
+          "Preconditions": [],
+          "Modifiers": {
+            "Items": [
+              {
+                "Type": "Transformation",
+                "Expression": "$",
+                "Active": false
+              },
+              {
+                "Type": "Comparison",
+                "Operand": "",
+                "Value": "",
+                "IfValue": "",
+                "ElseValue": "",
+                "Active": false
+              }
+            ]
+          },
+          "ConfigRefs": [],
+          "RawValue": "0",
+          "Value": "0",
+          "Status": {}
+        },
+        {
+          "Source": {
+            "SimConnectValue": {
+              "UUID": "-",
+              "Value": "(L:MFD_RNG_PAN_DN,bool) 1 == if{ (E:SIMULATION TIME, second) 10 * near 2 % \n(>H:AS1000_MFD_JOYSTICK_DOWN) }",
+              "VarType": 2
+            },
+            "Type": "SimConnectSource"
+          },
+          "TestValue": {
+            "type": 1,
+            "Float64": 1.0,
+            "String": null
+          },
+          "DeviceType": "-",
+          "DeviceName": null,
+          "GUID": "c683a3b5-1aea-4632-8c85-69af2bc68fdf",
+          "Active": true,
+          "Name": "MFD PAN DN",
+          "Type": "OutputConfigItem",
+          "ModuleSerial": "-",
+          "Preconditions": [],
+          "Modifiers": {
+            "Items": [
+              {
+                "Type": "Transformation",
+                "Expression": "$",
+                "Active": false
+              },
+              {
+                "Type": "Comparison",
+                "Operand": "",
+                "Value": "",
+                "IfValue": "",
+                "ElseValue": "",
+                "Active": false
+              }
+            ]
+          },
+          "ConfigRefs": [],
+          "RawValue": "0",
+          "Value": "0",
+          "Status": {}
+        },
+        {
+          "Source": {
+            "SimConnectValue": {
+              "UUID": "-",
+              "Value": "(L:MFD_RNG_PAN_LT,bool) 1 == if{ (E:SIMULATION TIME, second) 10 * near 2 % \n(>H:AS1000_MFD_JOYSTICK_LEFT) }",
+              "VarType": 2
+            },
+            "Type": "SimConnectSource"
+          },
+          "TestValue": {
+            "type": 1,
+            "Float64": 1.0,
+            "String": null
+          },
+          "DeviceType": "-",
+          "DeviceName": null,
+          "GUID": "f6b4a2fc-5911-4236-98bb-86c77a16aabb",
+          "Active": true,
+          "Name": "MFD PAN LT",
+          "Type": "OutputConfigItem",
+          "ModuleSerial": "-",
+          "Preconditions": [],
+          "Modifiers": {
+            "Items": [
+              {
+                "Type": "Transformation",
+                "Expression": "$",
+                "Active": false
+              },
+              {
+                "Type": "Comparison",
+                "Operand": "",
+                "Value": "",
+                "IfValue": "",
+                "ElseValue": "",
+                "Active": false
+              }
+            ]
+          },
+          "ConfigRefs": [],
+          "RawValue": "0",
+          "Value": "0",
+          "Status": {}
+        },
+        {
+          "Source": {
+            "SimConnectValue": {
+              "UUID": "-",
+              "Value": "(L:MFD_RNG_PAN_RT,bool) 1 == if{ (E:SIMULATION TIME, second) 10 * near 2 % \n(>H:AS1000_MFD_JOYSTICK_RIGHT) }",
+              "VarType": 2
+            },
+            "Type": "SimConnectSource"
+          },
+          "TestValue": {
+            "type": 1,
+            "Float64": 1.0,
+            "String": null
+          },
+          "DeviceType": "-",
+          "DeviceName": null,
+          "GUID": "67710520-638e-4441-9f60-5b7bc189f73d",
+          "Active": true,
+          "Name": "MFD PAN RT",
+          "Type": "OutputConfigItem",
+          "ModuleSerial": "-",
+          "Preconditions": [],
+          "Modifiers": {
+            "Items": [
+              {
+                "Type": "Transformation",
+                "Expression": "$",
+                "Active": false
+              },
+              {
+                "Type": "Comparison",
+                "Operand": "",
+                "Value": "",
+                "IfValue": "",
+                "ElseValue": "",
+                "Active": false
+              }
+            ]
+          },
+          "ConfigRefs": [],
+          "RawValue": "0",
+          "Value": "0",
+          "Status": {}
+        }
+      ]
+    }
+  ]
+}
